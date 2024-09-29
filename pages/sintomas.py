@@ -21,7 +21,7 @@ cursor = conn.cursor()
 st.write('Cadastro de Sintomas')
 
 # Executar uma consulta
-cursor.execute('SELECT sintomas_nome FROM tab_sintomas')
+cursor.execute('SELECT sintoma_port FROM tab_sintomas')
 
 # Buscar os resultados
 rows = cursor.fetchall()
