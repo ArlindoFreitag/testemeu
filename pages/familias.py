@@ -21,7 +21,7 @@ cursor = conn.cursor()
 st.write('Cadastro de Familias')
 
 # Executar uma consulta
-cursor.execute('SELECT * FROM tab_familias')
+cursor.execute('SELECT familia_nome FROM tab_familias')
 
 # Buscar os resultados
 rows = cursor.fetchall()

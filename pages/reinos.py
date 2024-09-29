@@ -21,7 +21,7 @@ cursor = conn.cursor()
 st.write('Cadastro de Reinos')
 
 # Executar uma consulta
-cursor.execute('SELECT * FROM tab_reinos')
+cursor.execute('SELECT reino_nome FROM tab_reinos')
 
 # Buscar os resultados
 rows = cursor.fetchall()

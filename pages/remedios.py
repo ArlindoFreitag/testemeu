@@ -21,7 +21,7 @@ cursor = conn.cursor()
 st.write('Cadastro de Remédios')
 
 # Executar uma consulta
-cursor.execute('SELECT * FROM tab_remedios')
+cursor.execute('SELECT remedio_nome, remedio_familia, remedio_reino FROM tab_remedios')
 
 # Buscar os resultados
 rows = cursor.fetchall()
